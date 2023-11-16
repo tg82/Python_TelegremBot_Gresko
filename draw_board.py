@@ -1,4 +1,5 @@
 import random
+from colorama import Fore, Back, Style
 
 # Напишите функцию draw_board(board), которая рисует доску размером 3х3. Функция принимает на вход двумерный список и выдает игровое поле.
 def draw_board(board):
@@ -11,6 +12,10 @@ def draw_board(board):
 # Функция принимает на вход двумерный список `**board`** и игрока (Х или 0)
 # и просит игрока ввести координаты того места, где он хочет разместить свой символ на доске.
 # Если место уже занято, функция предлагает игроку повторить попытку.
+
+# print(Fore.RED + 'X' + Style.RESET_ALL)
+# print(Fore.BLUE + 'O' + Style.RESET_ALL)
+# print(Back.YELLOW + ' ' + Style.RESET_ALL)
 
 def ask_move(player, board):
 	value = list(map(int, input(f'\t{player}, Куда будем ходить? Введите координаты (x, y) ').split()))
@@ -28,9 +33,9 @@ def ask_move(player, board):
 	return value
 
 def check_win(board):
-	win = [['X', 'X', 'X'], ['O', 'O', 'O']]
-	win_X = 'X'
-	win_O = 'O'
+	win_X = Fore.RED + 'X' + Style.RESET_ALL
+	win_O = Fore.BLUE + 'O' + Style.RESET_ALL
+	win = [[win_X, win_X, win_X], [win_O, win_O, win_O]]
 	for i in range(len(board)):
 		# проверка строк
 		if board[i] in win:
@@ -51,14 +56,14 @@ def ask_and_make_move(player, board):
 	value = ask_move(player, board)
 
 	if player == 'player_1':
-		board[value[0]][value[1]] = 'X'
+		board[value[0]][value[1]] = Fore.RED + 'X' + Style.RESET_ALL
 		if check_win(board):
 			return True
 
 		player = 'player_2'
 
 	elif player == 'player_2':
-		board[value[0]][value[1]] = 'O'
+		board[value[0]][value[1]] = Fore.BLUE + 'O' + Style.RESET_ALL
 		if check_win(board):
 			return True
 
@@ -74,7 +79,8 @@ def ask_and_make_move(player, board):
 
 
 def tic_tac_toe():
-	board = [['*', '*', '*'], ['*', '*', '*'], ['*', '*', '*']]
+	a = Back.YELLOW + '*' + Style.RESET_ALL
+	board = [[a, a, a], [a, a, a], [a, a, a]]
 	player = ['player_1', 'player_2']
 
 	rand = random.choice(player)
@@ -83,3 +89,4 @@ def tic_tac_toe():
 
 
 tic_tac_toe()
+

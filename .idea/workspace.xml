@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ae5a0a-5c2d-47bf-b86d-f9dfc72c5df2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/draw_board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_board.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <workItem from="1699862341627" duration="2548000" />
       <workItem from="1699867482677" duration="19411000" />
       <workItem from="1700034698057" duration="48000" />
-      <workItem from="1700128088064" duration="3379000" />
+      <workItem from="1700128088064" duration="4564000" />
     </task>
     <servers />
   </component>
@@ -69,6 +69,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_TelegremBot_Gresko$draw_board.coverage" NAME="draw_board Coverage Results" MODIFIED="1700130881004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_TelegremBot_Gresko$draw_board.coverage" NAME="draw_board Coverage Results" MODIFIED="1700137692890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
